@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="iis.yuni.praktikumppb">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".aboutM4"
+            android:label="About"></activity>
+        <activity android:name=".Menu" />
+        <activity android:name=".loginM4"
+            android:label="LogIn"/>
+        <activity android:name=".struk_pembelian"
+            android:label="Nota"/>
+        <activity android:name=".coffee_shop"
+            android:label="Coffee Shop"/>
+        <activity android:name=".login"
+            android:label="LogIn"/>
+        <activity android:name=".Modul2Tugas1" />
+        <activity android:name=".Modul2" />
+        <activity android:name=".Modul1Tugas2" />
+        <activity android:name=".Modul1Tugas1" />
+        <activity android:name=".Modul1" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+
+</manifest>

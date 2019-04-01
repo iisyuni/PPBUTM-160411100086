@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Modul2Tugas1"
+    android:orientation="horizontal"
+    android:layout_centerHorizontal="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        //logo coffee shop
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:background="@drawable/coffeeshop_a"/>
+
+        //pilihan bahasa
+        <RadioGroup
+            android:id="@+id/pilih_bahasa"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/logo"
+            android:layout_alignParentRight="true">
+
+            <RadioButton
+                android:id="@+id/bhs_indo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Indonesia"
+                android:textStyle="bold"
+                android:onClick="id"/>
+
+            <RadioButton
+                android:id="@+id/bhs_ing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inggris"
+                android:textStyle="bold"
+                android:onClick="en"/>
+
+        </RadioGroup>
+
+        //Nama Pemesan
+        <TextView
+            android:id="@+id/label_nama"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Pemesan"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/pilih_bahasa"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:id="@+id/edit_nama"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan Nama Anda"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/label_nama"/>
+
+        //Menu Pemesanan
+        <RelativeLayout
+            android:id="@+id/Menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_nama">
+
+            //Menu Coffee
+            <TextView
+                android:id="@+id/label_menu"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menu Coffee"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"/>
+
+            //coffee arabica
+            <CheckBox
+                android:id="@+id/arabica"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Arabica"
+                android:layout_below="@+id/label_menu"/>
+
+            //coffee robusta
+            <CheckBox
+                android:id="@+id/robusta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Robusta"
+                android:layout_below="@+id/arabica"/>
+
+            //coffee americano
+            <CheckBox
+                android:id="@+id/americano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Americano"
+                android:layout_below="@+id/robusta"/>
+
+        </RelativeLayout>
+
+        //sajian
+        <RelativeLayout
+            android:id="@+id/sajian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/edit_nama">
+
+            <TextView
+                android:id="@+id/label_sajian"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sajian"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"/>
+
+            //sajian Arabica
+            <RadioGroup
+                android:id="@+id/pilih_sajian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/label_sajian">
+
+                <RadioButton
+                    android:id="@+id/radio_hang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hangat"/>
+
+                <RadioButton
+                    android:id="@+id/radio_ding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dingin"/>
+            </RadioGroup>
+
+            //Sajian Robusta
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/pilih_sajian1"
+                android:layout_below="@+id/pilih_sajian">
+
+                <RadioButton
+                    android:id="@+id/radio_hang1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hangat"/>
+
+                <RadioButton
+                    android:id="@+id/radio_ding1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dingin"/>
+            </RadioGroup>
+
+            //Sajian Americano
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/pilih_sajian2"
+                android:layout_below="@+id/pilih_sajian1">
+
+                <RadioButton
+                    android:id="@+id/radio_hang2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hangat"/>
+
+                <RadioButton
+                    android:id="@+id/radio_ding2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dingin"/>
+
+            </RadioGroup>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/jumlah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_nama"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/label_jumlah"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jumlah"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"/>
+
+            //plus min arabica
+            <Button
+                android:id="@+id/min"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:text="-"
+                android:layout_below="@+id/label_jumlah"
+                android:onClick="min_arabica"/>
+
+            <EditText
+                android:id="@+id/bnyk_pesanan"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:text="0"
+                android:textSize="14dp"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:layout_toRightOf="@+id/min"
+                android:layout_below="@+id/label_jumlah"/>
+
+            <Button
+                android:id="@+id/plus"
+                android:layout_width="32dp"
+                android:layout_height="35dp"
+                android:text="+"
+                android:layout_toRightOf="@+id/bnyk_pesanan"
+                android:layout_below="@+id/label_jumlah"
+                android:onClick="plus_arabica"/>
+
+            //plus min robusta
+            <Button
+                android:id="@+id/min1"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:text="-"
+                android:layout_below="@+id/min"
+                android:onClick="min_robusta"/>
+
+            <EditText
+                android:id="@+id/bnyk_pesanan1"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:text="0"
+                android:textSize="14dp"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:layout_below="@+id/bnyk_pesanan"
+                android:layout_toRightOf="@+id/min1" />
+
+            <Button
+                android:id="@+id/plus1"
+                android:layout_width="32dp"
+                android:layout_height="35dp"
+                android:text="+"
+                android:layout_below="@+id/plus"
+                android:layout_toRightOf="@+id/bnyk_pesanan1"
+                android:onClick="plus_robusta"/>
+
+            //plus min americano
+            <Button
+                android:id="@+id/min2"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:text="-"
+                android:layout_below="@+id/min1"
+                android:onClick="min_americano"/>
+
+            <EditText
+                android:id="@+id/bnyk_pesanan2"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:text="0"
+                android:textSize="14dp"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:layout_below="@+id/bnyk_pesanan1"
+                android:layout_toRightOf="@+id/min2" />
+
+            <Button
+                android:id="@+id/plus2"
+                android:layout_width="32dp"
+                android:layout_height="35dp"
+                android:text="+"
+                android:layout_below="@+id/plus1"
+                android:layout_toRightOf="@+id/bnyk_pesanan2"
+                android:onClick="plus_americano"/>
+
+
+        </RelativeLayout>
+
+
+        //button order
+        <Button
+            android:id="@+id/order"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pesan"
+            android:layout_below="@+id/Menu"
+            android:onClick="memesan"/>
+
+        //Total harga
+        <TextView
+            android:id="@+id/label_total"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jumlah Harga : "
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/order"/>
+        <TextView
+            android:id="@+id/isi_total"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_below="@+id/order"
+            android:layout_toRightOf="@+id/label_total"/>
+
+        //Pembayaran
+        <TextView
+            android:id="@+id/label_bayar"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bayar : "
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_below="@+id/label_total"/>
+
+        <EditText
+            android:id="@+id/isi_bayar"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Masukkan Nominal Pembayaran"
+            android:layout_below="@+id/isi_total"
+            android:layout_toRightOf="@+id/label_bayar"/>
+
+        //Button Pembayaran
+        <Button
+            android:id="@+id/btn_bayar"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BAYAR"
+            android:layout_below="@+id/isi_bayar"
+            android:onClick="bayar_pesanan"/>
+
+        //Kembalian
+        <TextView
+            android:id="@+id/label_kembalian"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kembalian : "
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/btn_bayar"/>
+
+        <TextView
+            android:id="@+id/isi_kembalian"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/btn_bayar"
+            android:layout_toRightOf="@+id/label_kembalian"
+            android:layout_marginBottom="10dp"/>
+
+    </RelativeLayout>
+
+</ScrollView>
