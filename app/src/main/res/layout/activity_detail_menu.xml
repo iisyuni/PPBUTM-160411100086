@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailMenu">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/RL1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@mipmap/ic_launcher"
+                android:padding="5dp"/>
+            <ScrollView
+                android:id="@+id/RL11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorPink"
+                android:layout_below="@+id/image"
+                android:gravity="center"
+                android:padding="5dp">
+                <TextView
+                    android:id="@+id/keterangan"
+                    android:text="Keterangan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </ScrollView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/sv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/RL1"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorGreen">
+
+            <TextView
+                android:id="@+id/judulMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Menu"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/hargaMenu"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Harga : \nRp. 0"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:layout_below="@id/judulMenu" />
+            <TextView
+                android:id="@+id/jumlah1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:text="0"
+                android:textColor="@color/colorBlack"
+                android:textSize="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/hargaMenu" />
+            <Button
+                android:id="@+id/min"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:text="-"
+                android:textColor="@color/colorBlack"
+                android:layout_below="@id/hargaMenu"
+                android:layout_toLeftOf="@id/jumlah1"
+                android:background="@color/colorAccent"
+                android:textSize="20dp"
+                android:onClick="min" />
+            <Button
+                android:id="@+id/plus"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:text="+"
+                android:textColor="@color/colorBlack"
+                android:layout_below="@id/hargaMenu"
+                android:layout_toRightOf="@id/jumlah1"
+                android:background="@color/colorAccent"
+                android:textSize="20dp"
+                android:onClick="plus"/>
+        </RelativeLayout>
+        <Button
+            android:id="@+id/pesan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="pesan"
+            android:layout_below="@+id/sv"
+            android:onClick="pesan"/>
+    </RelativeLayout>
+
+</ScrollView>

@@ -9,17 +9,43 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".aboutM4"
-            android:label="About"></activity>
-        <activity android:name=".Menu" />
-        <activity android:name=".loginM4"
-            android:label="LogIn"/>
-        <activity android:name=".struk_pembelian"
-            android:label="Nota"/>
-        <activity android:name=".coffee_shop"
-            android:label="Coffee Shop"/>
-        <activity android:name=".login"
-            android:label="LogIn"/>
+
+        <activity
+            android:name=".NotaPembelian"
+            android:label="Nota Pembelian">
+        </activity>
+
+        <activity
+            android:name=".DetailMenu"
+            android:parentActivityName=".Menu"
+            android:label="Detail Menu">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Menu"/>
+        </activity>
+        <activity
+            android:name=".aboutM4"
+            android:label="About"
+            android:parentActivityName=".Menu">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Menu"/>
+        </activity>
+        <activity
+            android:name=".Menu"
+            android:label="Menu Coffee Shop"/>
+        <activity
+            android:name=".loginM4"
+            android:label="LogIn" />
+        <activity
+            android:name=".struk_pembelian"
+            android:label="Nota" />
+        <activity
+            android:name=".coffee_shop"
+            android:label="Coffee Shop" />
+        <activity
+            android:name=".login"
+            android:label="LogIn" />
         <activity android:name=".Modul2Tugas1" />
         <activity android:name=".Modul2" />
         <activity android:name=".Modul1Tugas2" />
@@ -33,6 +59,5 @@
             </intent-filter>
         </activity>
     </application>
-
 
 </manifest>

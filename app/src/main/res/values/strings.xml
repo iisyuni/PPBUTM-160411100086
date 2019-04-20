@@ -1,3 +1,52 @@
 <resources>
     <string name="app_name">PraktikumPPB</string>
+    <string name="about">Hi! Selamat Datang Di Coffee Shop \n Kopi nikmat.. Terbuat dari biji kopi pilihan
+    </string>
+    <string-array name="jMenu">
+        <item>Expresso</item>
+        <item>Americano</item>
+        <item>Cappucino</item>
+        <item>Latte</item>
+        <item>Mocchacino</item>
+    </string-array>
+    <string-array name="ketMenu">
+        //Expresso
+        <item>\tKopi Expresso Kopi ini merupakan kopi hitam pekat dengan aroma yang sangat kuat.
+            \nKopi espresso dihasilkan dari ekstraksi biji kopi yang sudah digiling.
+            \nPenyajiannya murni hanya seduhan kopi giling dan air mendidih tanpa tambahan pemanis, susu, maupun krimer.
+        </item>
+        //Americano
+        <item>\tKopi Americano adalah espresso yang dicampur dengan air panas.
+            \nAmericano merupakan kopi hitam murni yang tidak terlalu kental dan pahit.
+        </item>
+        //Cappucino
+        <item>\tCappucino merupakan campuran espresso, susu, dan busa susu.
+            \nKomposisi untuk menciptakan secangkir cappucino yang nikmat adalah kombinasi ⅓ espresso berkualitas baik dan ⅓ susu panas dengan ⅓ busa susu yang ditambahkan di atasnya.
+        </item>
+        //Latte
+        <item>\tLatte merupakan kopi yang memiliki bahan dasar sama seperti cappucino yaitu expresso dan susu.
+            \nNamun yang membedakan adalah komposisi susu dan kopi pada latte adalah 3:1 sehingga cita rasa susu pada minuman kopi ini lebih terasa.
+            \nSelain itu, lapisan busa pada latte juga terlihat tipis.
+        </item>
+        //Moccachino
+        <item>\tMoccachino berasal dari sejenis kopi asli dari Mocha, Yaman.
+            \nRacikan mochaccino berasal dari campuran espresso dengan coklat dan susu.
+            \nMochaccino digemari oleh para pecinta kopi yang juga menyukai coklat.
+        </item>
+    </string-array>
+
+    <string-array name="hMenu">
+        //menu1
+        <item>6000</item>
+        //menu2
+        <item>7000</item>
+        //menu3
+        <item>8000</item>
+        //menu4
+        <item>9000</item>
+        //menu5
+        <item>10000</item>
+    </string-array>
+    
+    <string name="tHarga">"Harga : \t\tRp. \</string>
 </resources>

@@ -44,6 +44,5 @@ public class MainActivity extends AppCompatActivity {
     public void clik_btn_4(View view) {
         Intent clik4 = new Intent(getApplicationContext(),loginM4.class);
         startActivity(clik4);
-
     }
 }
